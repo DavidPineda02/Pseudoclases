@@ -7,3 +7,18 @@
 div {
     margin-top: 30px;
 }
+
+.ejercicio1 button{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.ejercicio1 button:hover {
+    background-color: lightblue;
+    border-color: blue;
+    color: darkblue;
+}
