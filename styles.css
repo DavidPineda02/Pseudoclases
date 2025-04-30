@@ -55,3 +55,42 @@ div {
     color: blueviolet;
     font-weight: 700;
 }
+
+.ejercicio4-5-6 {
+    width: 80%; 
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.ejercicio4-5-6 h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ejercicio4-5-6 input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #cacaca;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.ejercicio4-5-6 input[type="text"]:invalid {
+    border-color: red;
+}
+
+.ejercicio4-5-6 input[type="email"] {
+    border-color: #0d47a1;
+}
+
+.ejercicio4-5-6 input[type="password"] {
+    margin-bottom: 5px;
+}
+
+.ejercicio4-5-6 input:focus {
+    border: 1.5px solid #000;
+}
