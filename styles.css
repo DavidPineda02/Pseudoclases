@@ -94,3 +94,9 @@ div {
 .ejercicio4-5-6 input:focus {
     border: 1.5px solid #000;
 }
+
+.ejercicio7 .text:only-of-type{
+    font-weight: 700;
+    font-style: italic;
+    color: #0d47a1;
+}
