@@ -134,3 +134,12 @@ div {
     background-color: var(--color-texto);
     color: white;
 }
+
+.ejercicio11 h3 {
+    font-weight: bold;
+}
+
+.ejercicio11 h3::before {
+    content: "⚜️";
+    margin-right: 5px;
+}
