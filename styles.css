@@ -196,7 +196,7 @@ div {
     position: relative;
 }
 
-.ejercicio15 input{
+.ejercicio15 input {
     width: 100%;
     padding: 12px;
     border: 1.5px solid #cacaca;
@@ -207,4 +207,21 @@ div {
     position: absolute;
     padding-left: 6px;
     padding-top: 10px;
+}
+
+.ejercicio16 {
+    display: flex;
+    justify-content: center;
+}
+
+.ejercicio16 section {
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.ejercicio16 img {
+    position: relative;
+    width: 100%;
 }
