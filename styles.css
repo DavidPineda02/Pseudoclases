@@ -143,3 +143,12 @@ div {
     content: "⚜️";
     margin-right: 5px;
 }
+
+.ejercicio12 p{
+    font-weight: bolder;
+}
+
+.ejercicio12 p::after {
+    content: "~~:~~:~~";
+    margin-left: 5px;
+}
