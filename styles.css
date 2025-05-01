@@ -175,3 +175,19 @@ div {
     z-index: -1;
     border-radius: 5px;
 }
+
+.ejercicio14 .mensajes {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-left: 4px solid #2196F3;
+    color: #0d47a1;
+}
+
+.ejercicio14 .mensajes{
+    font-weight: bold;
+}
+
+.ejercicio14 .mensajes::before, .mensajes::after {
+    content: '"';
+}
