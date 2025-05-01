@@ -115,3 +115,22 @@ div {
     color: var(--color-texto);
     font-weight: bold;
 }
+
+.ejercicio10 .navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: var(--color-texto);
+    color: white;
+}
