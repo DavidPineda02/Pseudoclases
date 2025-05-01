@@ -100,29 +100,29 @@ div {
     border: 1.5px solid #000;
 }
 
-.ejercicio7 .text:only-of-type{
+.ejercicio7 .text:only-of-type {
     font-weight: 700;
     font-style: italic;
     color: #0d47a1;
 }
 
-.ejercicio8 .parrafo:first-of-type{
+.ejercicio8 .parrafo:first-of-type {
     font-weight: 600;
     font-style: italic;
     color: #2196F3;
 }
 
-.ejercicio9 h4{
+.ejercicio9 h4 {
     color: var(--color-texto);
     font-weight: bold;
 }
 
-.ejercicio10 .navbar{
+.ejercicio10 .navbar {
     display: flex;
     justify-content: space-around;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     font-weight: 500;
     color: black;
@@ -152,4 +152,26 @@ div {
 .ejercicio12 p::after {
     content: "~~:~~:~~";
     margin-left: 5px;
+}
+
+.ejercicio13 a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ejercicio13 a::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 5px;
 }
