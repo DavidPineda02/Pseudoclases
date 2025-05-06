@@ -1,5 +1,7 @@
+/* Importamos fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Definimos variables CSS globales usando :root (Ejercicio 9, 21, 22, 23, 24) */
 :root {
     --color-texto: #a10d3c;
     --ejercicio21-titulo: #631686;
@@ -9,40 +11,44 @@
     --ejercicio23-fallback: darkblue;
 }
 
+/* Reset básico de estilos (Ejercicio global) */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Mantiene los anchos/padding dentro del tamaño total del elemento */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Aplicamos un fondo usando una variable definida en :root (Ejercicio 22) */
 body {
-    background-color: var(--ejercicio22-fondo);
+    background-color: var(--ejercicio22-fondo); /* Uso de variable CSS */
 }
 
+/* Estilo base para las secciones */
 section {
     margin-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
+/* Ejercicio 1: Botón con efecto hover */
 .ejercicio1 button{
     margin-top: 70px;
     border-radius: 5px;
     padding: 5px;
     font-size: 15px;
     font-weight: 500;
-    transition: 1s;
+    transition: 1s; /* Animación suave al cambiar de estado */
 }
-
 .ejercicio1 button:hover {
     background-color: lightblue;
     border-color: blue;
     color: darkblue;
 }
 
+/* Ejercicio 2: Uso de :target para mostrar mensaje oculto */
 .mensaje {
     display: none;
     margin-top: 10px;
@@ -51,26 +57,25 @@ section {
     border-left: 4px solid #2196F3;
     color: #0d47a1;
 }
-
 .mensaje p{
     font-weight: 500;
 }
-
-.mensaje:target {
+.mensaje:target { /* Se activa cuando el ID del elemento coincide con el hash de la URL */
     display: block;
 }
-
 .ejercicio2 a {
     color: black;
     text-decoration: none;
 }
 
+/* Ejercicio 3: Estiliza el primer hijo <li> con :first-child */
 .ejercicio3 li:first-child {
     font-style: italic;
     color: blueviolet;
     font-weight: 700;
 }
 
+/* Estilos comunes para ejercicios 4, 5 y 6 */
 .ejercicio4-5-6 {
     width: 80%; 
     background-color: #f3f3f3;
@@ -78,60 +83,60 @@ section {
     margin-left: 30px;
     border-radius: 5px;
 }
-
 .ejercicio4-5-6 h3 {
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
 }
-
 .ejercicio4-5-6 input {
     display: block;
     width: 100%;
     padding: 12px;
     border: 1.5px solid #cacaca;
     margin-bottom: 20px;
-    transition: 0.5s;
+    transition: 0.5s; /* Efecto transición para animar cambios */
 }
 
+/* Ejercicio 4: Campos no válidos */
 .ejercicio4-5-6 input[type="text"]:invalid {
     border-color: red;
 }
 
+/* Ejercicio 5: Resalta solo campos de tipo email */
 .ejercicio4-5-6 input[type="email"] {
     border-color: #0d47a1;
 }
 
-.ejercicio4-5-6 input[type="password"] {
-    margin-bottom: 5px;
-}
-
+/* Ejercicio 6: Campo activo (:focus) cambia de borde */
 .ejercicio4-5-6 input:focus {
     border: 1.5px solid #000;
 }
 
+/* Ejercicio 7: Estiliza elementos únicos de su tipo con :only-of-type */
 .ejercicio7 .text:only-of-type {
     font-weight: 700;
     font-style: italic;
     color: #0d47a1;
 }
 
+/* Ejercicio 8: Primer párrafo de una sección con :first-of-type */
 .ejercicio8 .parrafo:first-of-type {
     font-weight: 600;
     font-style: italic;
     color: #2196F3;
 }
 
+/* Ejercicio 9: Uso de variable definida en :root */
 .ejercicio9 h4 {
-    color: var(--color-texto);
+    color: var(--color-texto); /* Variable global */
     font-weight: bold;
 }
 
+/* Ejercicio 10: Navegación semántica con cambio de color al hacer hover */
 .ejercicio10 .navbar {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Layout flexible */
+    justify-content: space-around; /* Distribuye espacio entre elementos */
 }
-
 .navbar a {
     text-decoration: none;
     font-weight: 500;
@@ -140,32 +145,32 @@ section {
     padding: 10px;
     border-radius: 5px;
 }
-
 .navbar a:hover {
     background-color: var(--color-texto);
     color: white;
 }
 
+/* Ejercicio 11: Icono antes de cada título con ::before */
 .ejercicio11 h3 {
     font-weight: bold;
 }
-
 .ejercicio11 h3::before {
     content: "⚜️";
     margin-right: 5px;
 }
 
-.ejercicio12 p{
+/* Ejercicio 12: Línea decorativa después de cada párrafo con ::after */
+.ejercicio12 p {
     font-weight: bolder;
 }
-
 .ejercicio12 p::after {
     content: "~~:~~:~~";
     margin-left: 5px;
 }
 
+/* Ejercicio 13: Botón con efecto sombra usando ::after */
 .ejercicio13 a {
-    position: relative;
+    position: relative; /* Permite posicionamiento interno absoluto */
     text-decoration: none;
     font-weight: 500;
     color: black;
@@ -173,69 +178,64 @@ section {
     padding: 10px;
     border-radius: 5px;
 }
-
 .ejercicio13 a::after {
     content: "";
-    position: absolute;
+    position: absolute; /* Posicionamiento relativo al padre */
     top: 5px;
     left: 5px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.3); /* Color semi-transparente */
+    z-index: -1; /* Coloca detrás del texto */
     border-radius: 5px;
 }
 
+/* Ejercicio 14: Comillas antes y después de un bloque de cita */
 .ejercicio14 .mensajes {
     padding: 10px;
     background-color: #f0f8ff;
     border-left: 4px solid #2196F3;
     color: #0d47a1;
-}
-
-.ejercicio14 .mensajes {
     font-weight: bold;
 }
-
 .ejercicio14 .mensajes::before, .mensajes::after {
-    content: '"';
+    content: '"'; /* Inserta texto automáticamente */
 }
 
+/* Ejercicio 15: Input con ícono dentro usando ::before */
 .ejercicio15 {
     display: block;
-    position: relative;
+    position: relative; /* Para posicionar el icono dentro */
 }
-
 .ejercicio15 input {
     width: 100%;
     padding: 12px;
     border: 1.5px solid #cacaca;
 }
-
 .ejercicio15::before {
     content: "🔷 ";
-    position: absolute;
+    position: absolute; /* Lo coloca sobre el campo */
     padding-left: 6px;
     padding-top: 10px;
 }
 
+/* Ejercicio 16: Imagen posicionada con relative sin alterar flujo */
 .ejercicio16 {
     display: flex;
     justify-content: center;
 }
-
 .ejercicio16 section {
     width: 90%;
     border: 1px solid #717171;
     padding: 20px;
-    position: relative;
+    position: relative; /* Base para posicionamiento interno */
 }
-
 .ejercicio16 img {
-    position: relative;
+    position: relative; /* Puede moverse sin afectar otros elementos */
     width: 100%;
 }
 
+/* Ejercicio 17: Tarjeta con botón absoluto */
 .ejercicio17 .tarjeta {
     --ejercicio24-borde: #cacaca;
     text-align: center;
@@ -244,24 +244,21 @@ section {
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     margin: 50px auto;
-    position: relative;
+    position: relative; /* Necesario para anidar elementos absolutos */
     height: 180px;
 }
-
 .tarjeta h2{
     font-weight: bold;
     padding-bottom: 10px;
 }
-
 .tarjeta p{
     padding-bottom: 10px;
 }
-
 .tarjeta button {
     --ejercicio24-Button: #ff4d4d;
-    position: absolute;
+    position: absolute; /* Fuera del flujo normal */
     background-color: var(--ejercicio24-Button);
     color: white;
     border: none;
@@ -273,14 +270,14 @@ section {
     right: 110px;
 }
 
+/* Ejercicio 18: Barra de navegación fija */
 .ejercicio18 .barra-nav {
     display: flex;
-    position: fixed;
+    position: fixed; /* Siempre visible, independiente del scroll */
     margin: 0;
     width: 100%;
     justify-content: space-around;
 }
-
 .ejercicio18 .barra-nav a {
     text-decoration: none;
     font-weight: 600;
@@ -290,14 +287,14 @@ section {
     padding: 7px;
     border-radius: 5px;
 }
-
 .barra-nav a:hover {
-    background-color: var(--ejercicio23-fallback, black);
+    background-color: var(--ejercicio23-fallback, black); /* Fallback en caso de que la variable no exista */
     color: white;
 }
 
+/* Ejercicio 19: Dos cajas apiladas con z-index */
 .ejercicio19 .caja {
-    position: absolute;
+    position: absolute; /* Sale del flujo normal */
     width: 100px;
     height: 100px;
     color: white;
@@ -308,32 +305,30 @@ section {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 .ejercicio19 .caja1 {
     background-color: rgb(241, 159, 43);
     left: 100px;
-    z-index: 1;
+    z-index: 1; /* Define el orden de apilamiento */
     margin: 0 auto;
     border: 2px solid rgb(187, 109, 0);
 }
-
 .ejercicio19 .caja2 {
     background-color: gold;
     left: 140px;
-    z-index: 2;
+    z-index: 2; /* Está por encima de la caja1 */
     border: 2px solid rgb(166, 141, 0);
 }
 
+/* Ejercicio 20: Centrado con position y transform */
 .ejercicio20 {
     position:relative;
     padding-top: 550px;
 }
-
 .card1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centra perfectamente */
     width: 320px;
     padding: 20px;
     background-color: var(--ejercicio21-background);
@@ -342,7 +337,6 @@ section {
     text-align: center;
     border: 2px solid var(--ejercicio21-borde);
 }
-
 .card1 h2 {
     font-weight: bold;
     margin-top: 5px;
@@ -350,7 +344,6 @@ section {
     margin-bottom: 20px;
     font-size: 25px;
 }
-
 .card1 p {
     font-weight: 500;
 }
