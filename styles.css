@@ -134,8 +134,7 @@ section {
 
 /* Ejercicio 10: Navegación semántica con cambio de color al hacer hover */
 .ejercicio10 .navbar {
-    display: flex; /* Layout flexible */
-    justify-content: space-around; /* Distribuye espacio entre elementos */
+    display: inline-block;
 }
 .navbar a {
     text-decoration: none;
@@ -144,6 +143,7 @@ section {
     background-color: lightblue;
     padding: 10px;
     border-radius: 5px;
+    margin-right: 50px;
 }
 .navbar a:hover {
     background-color: var(--color-texto);
@@ -221,8 +221,7 @@ section {
 
 /* Ejercicio 16: Imagen posicionada con relative sin alterar flujo */
 .ejercicio16 {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto; /* Centra la sección */
 }
 .ejercicio16 section {
     width: 90%;
@@ -272,11 +271,10 @@ section {
 
 /* Ejercicio 18: Barra de navegación fija */
 .ejercicio18 .barra-nav {
-    display: flex;
+    display: inline-block;
     position: fixed; /* Siempre visible, independiente del scroll */
     margin: 0;
     width: 100%;
-    justify-content: space-around;
 }
 .ejercicio18 .barra-nav a {
     text-decoration: none;
@@ -286,6 +284,7 @@ section {
     background-color: lightblue;
     padding: 7px;
     border-radius: 5px;
+    margin-left: 380px;
 }
 .barra-nav a:hover {
     background-color: var(--ejercicio23-fallback, black); /* Fallback en caso de que la variable no exista */
