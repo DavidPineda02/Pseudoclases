@@ -237,9 +237,10 @@ section {
 }
 
 .ejercicio17 .tarjeta {
+    --ejercicio24-borde: #cacaca;
     text-align: center;
     background-color: #f5f5f5;
-    border: 2px solid #cacaca;
+    border: 2px solid var(--ejercicio24-borde);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -259,8 +260,9 @@ section {
 }
 
 .tarjeta button {
+    --ejercicio24-Button: #ff4d4d;
     position: absolute;
-    background-color: #ff4d4d;
+    background-color: var(--ejercicio24-Button);
     color: white;
     border: none;
     border-radius: 5px;
