@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-div {
+section {
     margin-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
@@ -283,4 +283,58 @@ div {
 .barra-nav a:hover {
     background-color: darkblue;
     color: white;
+}
+
+.ejercicio19 .caja {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight: 500;
+    display: block;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ejercicio19 .caja1 {
+    background-color: red;
+    left: 100px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.ejercicio19 .caja2 {
+    background-color: blue;
+    left: 140px;
+    z-index: 2;
+}
+
+.ejercicio20 {
+    position:relative;
+    padding-top: 500px;
+}
+
+.card1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 20px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card1 h2 {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #005792;
+}
+
+.card1 p {
+    color: #555;
 }
