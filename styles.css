@@ -2,6 +2,9 @@
 
 :root {
     --color-texto: #a10d3c;
+    --ejercicio21-titulo: #631686;
+    --ejercicio21-background: hsla(281, 100%, 50%, 0.299);
+    --ejercicio21-borde: #4b006d;
 }
 
 * {
@@ -293,27 +296,29 @@ section {
     font-weight: 500;
     display: block;
     border-radius: 15px;
-    margin-top: 50px;
+    margin-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .ejercicio19 .caja1 {
-    background-color: red;
+    background-color: rgb(241, 159, 43);
     left: 100px;
     z-index: 1;
     margin: 0 auto;
+    border: 2px solid rgb(187, 109, 0);
 }
 
 .ejercicio19 .caja2 {
-    background-color: blue;
+    background-color: gold;
     left: 140px;
     z-index: 2;
+    border: 2px solid rgb(166, 141, 0);
 }
 
 .ejercicio20 {
     position:relative;
-    padding-top: 500px;
+    padding-top: 600px;
 }
 
 .card1 {
@@ -323,18 +328,21 @@ section {
     transform: translate(-50%, -50%);
     width: 320px;
     padding: 20px;
-    background-color: rgb(234, 234, 234);
+    background-color: var(--ejercicio21-background);
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 2px solid var(--ejercicio21-borde);
 }
 
 .card1 h2 {
     font-weight: bold;
     margin-top: 5px;
-    color: #005792;
+    color: var(--ejercicio21-titulo);
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .card1 p {
-    color: #555;
+    font-weight: 500;
 }
