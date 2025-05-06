@@ -6,6 +6,7 @@
     --ejercicio21-background: hsla(281, 100%, 50%, 0.299);
     --ejercicio21-borde: #4b006d;
     --ejercicio22-fondo: rgba(128, 128, 128, 0.203);
+    --ejercicio23-fallback: darkblue;
 }
 
 * {
@@ -289,7 +290,7 @@ section {
 }
 
 .barra-nav a:hover {
-    background-color: darkblue;
+    background-color: var(--ejercicio23-fallback, black);
     color: white;
 }
 
